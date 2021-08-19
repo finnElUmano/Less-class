@@ -91,7 +91,10 @@ h3 {
 .intro__autor span {
   display: inline-block;
 }
-.intro__autor .intro__autor-titulo {
+.intro__autor-titulo {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   color: rgba(255, 255, 255, 0.5);
 }
 .articulo--principal {
