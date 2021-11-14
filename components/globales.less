@@ -9,12 +9,14 @@
 
 /*DARK MODE*/
 @dark-mod: true;
+@color-dark: linear-gradient(90deg, rgba(136,65,218,1) 0%, rgba(0,0,0,1) 100%); 
 /*MIXIN*/
 
 /*DARK MODE in mixin*/
 
 .dark-mode() when (@dark-mod = true) {
   background-color: @color-primario;
+  background-size: cover;
   color: @color-claro;
   .intro {
     background-color: @color-secundario;
@@ -25,7 +27,7 @@
     }
   }
   .caja__contenido {
-    background-color: @color-secundario;
+    background-image: @color-dark;
     color: fade(@color-claro, 70%)
   }
   a {
